@@ -9,6 +9,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/resume.min.css" rel="stylesheet" />
+  <link href="img/profile.jpg" rel="icon"  type="image/x-icon" />
   <link href="css/styles.css" rel="stylesheet">
 
 </head>
@@ -37,7 +38,7 @@
   <p id="visitor-count">Visitor count: <span id="visitor-count-num">Loading...</span></p>
 
   <script>
-  fetch('https://<your-api-id>.execute-api.<region>.amazonaws.com/visits')
+  fetch('https://9uh6x8c208.execute-api.us-east-1.amazonaws.com/visits')
     .then(response => response.text())
     .then(count => {
       document.getElementById('visitor-count').innerText = count;
