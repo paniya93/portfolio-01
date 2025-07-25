@@ -9,6 +9,8 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/resume.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet">
+
 </head>
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -31,6 +33,19 @@
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
       </ul>
     </div>
+  
+  <p id="visitor-count">Visitor count: <span id="visitor-count-num">Loading...</span></p>
+
+  <script>
+  fetch('https://<your-api-id>.execute-api.<region>.amazonaws.com/visits')
+    .then(response => response.text())
+    .then(count => {
+      document.getElementById('visitor-count').innerText = count;
+    })
+    .catch(error => {
+      console.error('Visitor count fetch error:', error);
+    });
+  </script>
   </nav>
 
   <div class="container-fluid p-0">
@@ -223,5 +238,6 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/resume.min.js"></script>
+
 </body>
 </html>
