@@ -13,7 +13,7 @@
   <link href="css/styles.css" rel="stylesheet">
 
 </head>
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target="#sideNav" data-offset="100">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Praneeth Perera</span>
@@ -127,18 +127,112 @@ downtime during transition</li>
     <!-- <img src="images/certification-icon.png" alt="Certifications Logo" 
        style="height: 40px; width: 40px; margin-right: 12px; flex-shrink: 0;"> -->
       <span>Core Skills</span>
-    </h2>
-        <ul class="fa-ul mb-0">
-          <li><i class="fa-li fa fa-check"></i>Linux (Ubuntu, CentOS, RHEL, Oracle)</li>
-          <li><i class="fa-li fa fa-check"></i>Bash & Shell Scripting, Python Automation</li>
-          <li><i class="fa-li fa fa-check"></i>Networking (DNS, DHCP, FTP, SSH, NFS, TCP/IP)</li>
-          <li><i class="fa-li fa fa-check"></i>System Monitoring (Nagios, journalctl, syslog)</li>
-          <li><i class="fa-li fa fa-check"></i>Apache, Nginx, Tomcat</li>
-          <li><i class="fa-li fa fa-check"></i>Cloud: AWS EC2, S3, IAM</li>
-          <li><i class="fa-li fa fa-check"></i>Virtualization: VMware, KVM</li>
-          <li><i class="fa-li fa fa-check"></i>Configuration Management: Ansible</li>
-          <li><i class="fa-li fa fa-check"></i>Firewalls (iptables, firewalld), SELinux</li>
-        </ul>
+        </h2>
+
+    <div class="skill-grid">
+      
+      <!-- Category: Operating Systems & Scripting -->
+      <h3 class="skill-category">Operating Systems & Scripting</h3>
+      <div class="skill-row">
+        
+        <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+        <h6>Linux Distros</h6>
+        <p>RHEL, Oracle, Ubuntu, Amazon Linux</p>
+        </div>
+
+        <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <h6>Scripting</h6>
+        <p>Bash, Shell Scripting, Python Automation</p>
+        </div>
+      </div>
+
+      <!-- Category: Networking & Security -->
+      <h3 class="skill-category">Networking & Security</h3>
+      <div class="skill-row">
+  
+        <div class="skill-card">
+        <img src="img/protocols.png" alt="Protocols">
+        <img src="img/sftp.png" alt="SFTP">
+        <h6>Protocols & Services</h6>
+        <p>DNS, DHCP, FTP, SSH, TCP/IP</p>
+        </div>
+
+        <div class="skill-card">
+        <img src="img/selinux.png" alt="SELinux">
+        <img src="img/firewalld.png" alt="Firewalld">
+        <h6>Security</h6>
+        <p>SELinux, iptables, firewalld</p>
+        </div>
+      </div>
+
+      <!-- Category: System Monitoring & Logging -->
+      <h3 class="skill-category">System Monitoring & Logging</h3>
+      <div class="skill-row">
+        
+        <div class="skill-card">
+          <img src="img/nagios.png" alt="Monitoring">
+          <h6>Monitoring Tools</h6>
+          <p>Nagios</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="img/logs.png" alt="Logging">
+          <h6>Logs & Diagnostics</h6>
+          <p>journalctl, syslog</p>
+        </div>
+
+      </div>
+
+      <!-- Category: Web & Application Servers -->
+      <h3 class="skill-category">Web & Application Servers</h3>
+      <div class="skill-row">
+
+        <div class="skill-card">
+          <img src="img/apache.png" alt="Apache">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Web Servers">
+          <h6>Web Servers</h6>
+          <p>Apache, Nginx</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="img/tomcat.png" alt="Tomcat">
+          <img src="img/jboss.png" alt="JBoss">
+          <h6>Application Servers</h6>
+          <p>Tomcat, JBoss</p>
+        </div>
+
+      </div>
+
+      <!-- Category: Cloud & Virtualization -->
+      <h3 class="skill-category">Cloud & Virtualization</h3>
+      <div class="skill-row">
+
+        <div class="skill-card">
+          <img src="img/aws.png" alt="AWS">
+          <h6>Cloud Platform</h6>
+          <p>AWS (EC2, S3, IAM, Lambda, API Gateway, Cloudfront, Route53)</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="img/vmware.png" alt="Virtualization">
+          <h6>Virtualization</h6>
+          <p>VMware</p>
+        </div>
+      </div>
+
+      <!-- Category: Configuration Management & Automation -->
+      <h3 class="skill-category">Configuration Management & Automation</h3>
+      <div class="skill-row">
+
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible">
+          <h6>Automation Tool</h6>
+          <p>Ansible Automation</p>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -164,7 +258,7 @@ downtime during transition</li>
           </div>
           <div class="subheading mb-2">University of Colombo</div>
         </div>
-      </div>
+    </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-light shadow-sm rounded" id="certifications">
@@ -257,6 +351,6 @@ downtime during transition</li>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/resume.min.js"></script>
-
+  
 </body>
 </html>
