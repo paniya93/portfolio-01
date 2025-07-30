@@ -36,6 +36,16 @@ a.cert-link:hover, a.btn-outline-primary:hover {
   border-color: #bd5d38 !important;
 }
 
+.black-link {
+  color: black;
+  text-decoration: none;
+}
+
+.black-link:hover {
+  color: #333;
+}
+
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
